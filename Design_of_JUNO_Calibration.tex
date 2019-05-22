@@ -49,7 +49,7 @@ Jiangmen Underground Neutrino Observatory (JUNO) is a spherical-tank (35.4 m dia
 
 
 \begin{keyword}
-JUNO,Calibration,Simulation
+JUNO,Calibration,Simulation,Radioactive source
 \end{keyword}
 
 %\begin{pacs}
@@ -69,18 +69,18 @@ JUNO,Calibration,Simulation
 
 \section{Introduction}
 \subsection{Motivation of calibration}
-JUNO is a muti-purpose neutrino detector, and the main purpose of JUNO is to determine the neutrino mass hierarchy. As a medium baseline reactor anti-neutrino detector, 53 km from the Yangjiang and Taishan NPP, it can resolve the MH in the neutrino oscillation. Fig.~\ref{IBD_spe} shows the spectrum of anti-neutrino with 53 km baseline oscillation, the MH can be detected with the spectrum. But this requires very high precise measurement on both energy resolution and scale. Based on Yellow book, the energy resolution of JUNO detector should be better than 3\% and the uncertainty of energy scale should be better than 1\%.
+JUNO is a muti-purpose neutrino detector, and the main purpose of JUNO is to determine the neutrino mass hierarchy. As a medium baseline reactor anti-neutrino detector, 53 km from the Yangjiang and Taishan NPP, it can resolve the MH in the neutrino oscillation. But this requires very high precise measurement on both energy resolution and scale. Based on Ref.~\cite{lab1}, the energy resolution of JUNO detector should be better than 3\% and the uncertainty of energy scale should be better than 1\%.
 
-\begin{center}
-	\includegraphics[width=3.0in]{IBD.png}
-	\figcaption{\label{IBD_spe}The IBD spectrum}
-\end{center}
+%\begin{center}
+%	\includegraphics[width=3.0in]{IBD.png}
+%	\figcaption{\label{IBD_spe}The IBD spectrum}
+%\end{center}
 
 However, due to the LS transmittance and total reflection at CD boundary, connection bar and so on, the response of detector is not uniform, and the non-uniformity effect will worsen the detector energy resolution, so we need to correct the non-uniformity with calibration system to make the energy resolution good enough to meet the physics requirement. 
-Fig shows the simulation of 1 MeV e+ uniformly in CD without correction, the energy  resolution is ~7\%, which doesn't meet the physics requirement of JUNO. So A calibration strategy for non-uniformity correction is necessary.
+Fig.~\ref{mono_energy} shows the simulation of 1 MeV e+ uniformly in CD without correction, the energy  resolution is ~7\%, which doesn't meet the physics requirement of JUNO. So A calibration strategy for non-uniformity correction is very necessary.
 
 
-The other effect is about energy non-linearity of detector response. The quenching of LS is different for different energy, and even with the same energy, e-, e+ and gamma still have different quenching, so the quenching of LS is energy and particle dependent. Reference to Yellow book, the incorrect energy scale will give wrong MH sensitivity (increase or decrease), so we need various source to calibration it.
+The other effect is about energy non-linearity of detector response. The quenching of LS is different for different energy, and even with the same energy, e-, e+ and gamma still have different quenching, so the quenching of LS is energy and particle dependent. Reference to Ref.~\cite{lab1}, the incorrect energy scale will give wrong MH sensitivity (increase or decrease), so we need various sources to calibrate it.
 
 \subsection{Calibration system}
 
@@ -500,7 +500,7 @@ Based on the calibration system developed with ACU, CLS and GT, the simulation s
 
 \vspace{3mm}
 
-%\bibitem{lab1}LIU M L, ZHANG Y H, ZHOU X H et al. Phys. Rev. C, 2004, {\bf 70}: 14---34
+\bibitem{lab1}Fengpeng An et al. 2016 . Phys. G: Nucl. Part. Phys. 43 030401
 
 %\bibitem{lab2} Tinkham M. Group Theory and Quantum Mechanics. New
 %York: McGraw-Hill, 1964. 10---50
