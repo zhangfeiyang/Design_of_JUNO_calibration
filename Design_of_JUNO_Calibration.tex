@@ -249,31 +249,35 @@ For every source calibration, it will take ~5 minutes. So the rate of every sour
 One of main purpose of JUNO calibration is to make uncertainty of the scale less than 1\%. In order to reach this physics requirement, we should have a better understanding of the energy non-linearity of detector response. A series of radioactive sources will be used to do the calibration of energy non-linearity, including gamma sources, neutron source and beta source. 
 
 \subsection{Energy non-linearity of gamma}
-Here we will introduce the strategy of JUNO calibration based on MC simulation result. The full absorption peak of delay signal of neutron capture at Hydrogen (2.22 MeV) is determined as the energy scale. Then we can reconstruct energy of other calibration source with PE/scale. The reconstructed energy is different from true energy due to energy non-linearity. The ratio of reconstructed energy and true energy will be described as energy dependent of non-linearity. Fig.~\ref{non_linearity_fit} shows the energy non-linearity of gamma from 0.511 MeV to 6.13 MeV, which can be obtained from calibration system.
+Here we will introduce the strategy of JUNO calibration based on MC simulation result. The full absorption peak of delay signal of neutron capture at Hydrogen (2.22 MeV) is determined as the energy scale. Then we can reconstruct energy of other calibration source with PE/scale. The reconstructed energy is different from true energy due to energy non-linearity. The ratio of reconstructed energy and true energy will be described as energy dependent of non-linearity.
 
-\begin{center}
-	\centering
-	%\includegraphics[width=3in]{statistical.jpg}
-	%\subfigure[]{\includegraphics[width=4in]{gamma2e_1.png}}
-	\includegraphics[width=3in]{gamma2e_1.png}
-	\includegraphics[width=3in]{gamma2e_2.png}
-	%\subfigure[]{\includegraphics[width=4in]{gamma2e_2.png}}
-	\figcaption{The relationship between gamma and electron}
-	\label{gamma2e}
-\end{center}
+%\begin{center}
+%	\centering
+%	%\includegraphics[width=3in]{statistical.jpg}
+%	%\subfigure[]{\includegraphics[width=4in]{gamma2e_1.png}}
+%	\includegraphics[width=3in]{gamma2e_1.png}
+%	\includegraphics[width=3in]{gamma2e_2.png}
+%	%\subfigure[]{\includegraphics[width=4in]{gamma2e_2.png}}
+%	\figcaption{The relationship between gamma and electron}
+%	\label{gamma2e}
+%\end{center}
 
-\begin{center}
-	\centering
-	%\includegraphics[width=3in]{statistical.jpg}
-	\includegraphics[width=2in]{gamma_e_pdf1.png}
-	\includegraphics[width=2in]{gamma_e_pdf2.png}
-	\figcaption{Probability of energy density function of electron from gamma}
-	\label{gamma_e_pdf}
-\end{center}
+%\begin{center}
+%	\centering
+%	%\includegraphics[width=3in]{statistical.jpg}
+%	\includegraphics[width=2in]{gamma_e_pdf1.png}
+%	\includegraphics[width=2in]{gamma_e_pdf2.png}
+%	\figcaption{Probability of energy density function of electron from gamma}
+%	\label{gamma_e_pdf}
+%\end{center}
 
 
 \subsection{Relationship between gamma and electron}
-However, IBD events is positron events. So we would like to know the response of positron energy non-linearity. The relation between gamma and electron can be established with Geant4. And we assume that electron and positron have almost same action of energy non-linearity in addition to two gammas from positron annihilation.  There are mainly three physics process for the conversion from gamma to electron, including pair production, Compton scattering, photoelectric effect, as shown in Fig.~\ref{gamma2e}. Fig.~\ref{gamma_e_pdf} shows the probability density function (PDF) of energy of electron with initial energy of gamma 6.13 MeV.  
+However, IBD events is positron events. So we would like to know the response of positron energy non-linearity. 
+The relation between gamma and electron can be established with Geant4. 
+And we assume that electron and positron have almost same action of energy non-linearity in addition to two gammas from positron annihilation.
+There are mainly three physics process for the conversion from gamma to electron, including pair production, Compton scattering, photoelectric effect. 
+Fig.~\ref{gamma_e_pdf} shows the probability density function (PDF) of energy of electron with initial energy of gamma 6.13 MeV.  
 
 \subsection{Model of energy non-linearity}
 Referring to Daya Bay's method, an empirical formula with 4 parameters was used to describe energy non-linearity of electron, 
