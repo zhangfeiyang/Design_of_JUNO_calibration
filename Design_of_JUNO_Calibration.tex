@@ -131,24 +131,28 @@ The internal part is stainless steel to seal the source. Both diameter and heigh
 %\end{center}
 
 
-The neutron enclosure is different from gamma since smaller neutron source is not safe and necessary, as shown in Fig.~\ref{neutron_source}. Both diameter and height of neutron source are 8 mm. The source is in a stainless steel (SS) tube. There are two SS pins respectively in top and bottom of the tube. The outer is the PTFE shell just same as gamma source. Fig.~\ref{neutron_prototype} shows the prototype of neutron source which has been tested in Daya Bay Detector. 
+The neutron enclosure is different from gamma since smaller neutron source is not safe and necessary. Both diameter and height of neutron source are 8 mm. The source is in a stainless steel (SS) tube. There are two SS pins respectively in top and bottom of the tube. The outer is the PTFE shell just same as gamma source.
 
-\begin{center}
-	%\centering
-	\includegraphics[width=3in]{source_geometry3.png}
-	\figcaption{Geometry of neutron source}
-	\label{neutron_source}
-\end{center}
-
-\begin{center}
-	%\centering
-	\includegraphics[width=3in]{neutron_source_prototype.jpg}
-	\figcaption{Prototype of neutron source}
-	\label{neutron_prototype}
-\end{center}
+%\begin{center}
+%	%\centering
+%	\includegraphics[width=3in]{source_geometry3.png}
+%	\figcaption{Geometry of neutron source}
+%	\label{neutron_source}
+%\end{center}
+%
+%\begin{center}
+%	%\centering
+%	\includegraphics[width=3in]{neutron_source_prototype.jpg}
+%	\figcaption{Prototype of neutron source}
+%	\label{neutron_prototype}
+%\end{center}
 
 \subsection{Calibration source}
-The radioactive sources include routine gamma and neutron sources. The detail of calibration sources and correlated energy is shown in table~\ref{radioactive_source}
+
+The radioactive sources include routine gamma and neutron sources.
+The gamma sources have a small size of geometry, with low energy loss and optical shadowing. So we could have a high precise calibration of gamma energy.
+However, only gamma source is not enough for the high energy calibration. So neutron source is necessary, which can provide 2.22 MeV gamma with neutron captured by hydragen and 4.95 MeV captured by carbon and 6.13 MeV with the second exited stat.
+The detail of calibration sources and correlated energy is shown in table~\ref{radioactive_source}
 
 \begin{center}
 	\tabcaption{Radioactive sources}
@@ -163,13 +167,13 @@ The radioactive sources include routine gamma and neutron sources. The detail of
 		$^{40}$K  & $\gamma$ & 1.461 MeV\\
 		\midrule  % ???
 		$^{68}$Ge & e$^{+}$ & annil 0.511 + 0.511 MeV\\
-		$^{22}$Na & e$^{+}$ & annil + 1.275 MeV \\
-		$^{40}$K  & e$^{-}$ & 0$\sim$1.31 MeV \\
+		%$^{22}$Na & e$^{+}$ & annil + 1.275 MeV \\
+		%$^{40}$K  & e$^{-}$ & 0$\sim$1.31 MeV \\
 		$^{90}$Sr & e$^{-}$ & 0$\sim$2.28 MeV \\
 		\midrule
 		$^{241}$Am-Be & n, $\gamma$ & neutron + 4.43 MeV \\
 		$^{241}$Am-$^{13}$C or $^{241}$Pu-$^{13}$C & n, $\gamma$ & neutron + 6.13 MeV \\
-		$^{252}$Cf & multiple n, multiple $\gamma$ & prompt $\gamma$'s, delayed n's \\
+		%$^{252}$Cf & multiple n, multiple $\gamma$ & prompt $\gamma$'s, delayed n's \\
 		\bottomrule  % ???
 	\end{tabular}
 	
@@ -178,9 +182,11 @@ The radioactive sources include routine gamma and neutron sources. The detail of
 
 
 
-\subsection{Simulation with source geometry}
-To study the effect of photon loss and energy loss, simulation of calibration source has been done with JUNO official software SNIPER, developed based on Geant4.
-The geometry of sources has already been written into SNIPER as shown in figure for both gamma and neutron source. The Fig.~\ref{Cs137} shows the simulation of gamma source Cs-137 with source enclosure. The Compton tail due to energy loss in source geometry will shift the full absorption peak. The fit function will correct the shift. The Fig.~\ref{neutron} shows the simulation of neutron source Am-C with source enclosure. Even with source enclosure, there is still no Compton shoulder for neutron source.
+%\subsection{Simulation with source geometry}
+%To study the effect of photon loss and energy loss, simulation of calibration source has been done with JUNO official software SNIPER, developed based on Geant4.
+%The geometry of sources has already been written into SNIPER as shown in figure for both gamma and neutron source. 
+The Fig.~\ref{Cs137} shows the simulation of gamma source Cs-137 with source enclosure. The Compton tail due to energy loss in source geometry will shift the full absorption peak. The fit function will correct the shift. 
+%The Fig.~\ref{neutron} shows the simulation of neutron source Am-C with source enclosure. Even with source enclosure, there is still no Compton shoulder for neutron source.
 
 \begin{center}
 	\includegraphics[width=3in]{Cs137.pdf}
@@ -188,12 +194,12 @@ The geometry of sources has already been written into SNIPER as shown in figure 
 	\label{Cs137}
 \end{center}
 
-\begin{center}
-	\centering
-	\includegraphics[width=3in]{neutron.pdf}
-	\figcaption{The neutron source with source enclosure at CD center}
-	\label{neutron}
-\end{center}
+%\begin{center}
+%	\centering
+%	\includegraphics[width=3in]{neutron.pdf}
+%	\figcaption{The neutron source with source enclosure at CD center}
+%	\label{neutron}
+%\end{center}
 
 \begin{center}
 	\centering
@@ -212,20 +218,26 @@ The geometry of sources has already been written into SNIPER as shown in figure 
 \section{Control energy uncertainty}
 \subsection{Shadowing effect}
 The material of source container shell is Teflon. Even the reflectivity is very high (assume 90\% reflectivity in the simulation), there still must be some optical photon loss. So we need to study the shadowing effect. To decouple the shadowing effect and Compton effect, we can select the events without energy loss during the simulation. With the cut, the PE spectrum follows the Gaussian distribution, so we fit it with Gaussian function to obtain mean value as shown in Fig.~\ref{Cs137}. And then compare it with the ideal case, bare source without enclosure. Fig.~\ref{shadowing} shows the uncertainty due to the shadowing effect.
+
 \subsection{Compton effect}
-The Compton effect is due to energy loss in non-LS material, and this will introduce Compton shoulder in PE spectrum. And the Compton shoulder will shift the mean value. Even we use the special function to correct this effect, there is still some residual bias. Fig.~\ref{compton} the uncertain due to the Compton effect.
+The Compton effect is due to energy loss in non-LS material, and this will introduce Compton shoulder in PE spectrum. And the Compton shoulder will shift the mean value. Even we use the special function to correct this effect, there is still some uncertainty we should consider. Fig.~\ref{compton} the uncertain due to the Compton effect.
+
 \subsection{Electronic effect}
-The non-linearity of electronic can be corrected to 0.3\% uncertainty level with laser calibration system. Here we assume the residual non-linearity is energy dependent, 
-\begin{eqnarray}
-\label{eq0}
-\frac{E_{rec}}{E_{vis}} = 1 + 0.3\%e^{-E_{vis}/t}
-\end{eqnarray}
-where t = 2.55 MeV
+The non-linearity of electronic can be calibrated with our lased calibration system. The intensity of laser calibration system can be controled to 0.3\% uncertainty in Ref.~\cite{lab2}, which can give a good calibration for electronic electronic. So in this paper, we roughly assume the uncertainty from electronic non-linearity is 0.3\%. 
+
+%\begin{eqnarray}
+%\label{eq0}
+%\frac{E_{rec}}{E_{vis}} = 1 + 0.3\%e^{-E_{vis}/t}
+%\end{eqnarray}
+%where t = 2.55 MeV
 
 
 \subsection{Statistical effect}
-Assume the rate of source is about 100 Hz. And it will take 5 minutes for every calibration points.
-So the total number of events is about 30000. Then we can estimate the uncertainty due to statistic as shown in Fig.~\ref{statistical}. The uncertainty of statistic is energy dependent.
+
+Since the requirement of uncertainty is 0.3\%, it's better to control the statistical uncertainty less than 0.03\%.
+Based on this, we did the simulation for all the source. We need about 30000 events for every source.
+For every source calibration, it will take ~5 minutes. So the rate of every source should be about 100 Hz.
+
 \begin{center}
 	\centering
 	\includegraphics[width=3in]{stat_uncertainty.pdf}
@@ -504,6 +516,7 @@ Based on the calibration system developed with ACU, CLS and GT, the simulation s
 \vspace{3mm}
 
 \bibitem{lab1}Fengpeng An et al. 2016 . Phys. G: Nucl. Part. Phys. 43 030401
+\bibitem{lab2}Y. Zhang et al 2019 JINST 14 P01009
 
 %\bibitem{lab2} Tinkham M. Group Theory and Quantum Mechanics. New
 %York: McGraw-Hill, 1964. 10---50
