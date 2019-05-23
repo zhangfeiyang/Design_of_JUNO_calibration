@@ -80,7 +80,7 @@ However, due to the LS transmittance and total reflection at CD boundary, connec
 Fig.~\ref{mono_energy} shows the simulation of 1 MeV e+ uniformly in CD without correction, the energy  resolution is ~7\%, which doesn't meet the physics requirement of JUNO. So A calibration strategy for non-uniformity correction is very necessary.
 
 
-The other effect is about energy non-linearity of detector response. The quenching of LS is different for different energy, and even with the same energy, e-, e+ and gamma still have different quenching, so the quenching of LS is energy and particle dependent. Reference to Ref.~\cite{lab1}, the incorrect energy scale will give wrong MH sensitivity (increase or decrease), so we need various sources to calibrate it.
+The other effect is about energy non-linearity of detector response. The quenching of LS is different for different energy, and even with the same energy, e-, e+ and gamma still have different quenching, so the quenching of LS is energy and particle dependent. Reference to Ref.~\cite{lab1}, the incorrect energy scale will give wrong MH sensitivity (increase or decrease). So control of energy scale uncertainty is essential.
 
 \subsection{Calibration system}
 
@@ -89,6 +89,7 @@ The other effect is about energy non-linearity of detector response. The quenchi
 	\figcaption{The overview of calibration system}
 	\label{overview_calibration_system}
 \end{center}
+During the calibration, we need deployment system to move the source to various position. 
 The deployments systems of calibration sources include ACU, CLS, GT, ROV as shown in Fig~\ref{overview_calibration_system}. For ROV and CLS, we will use independent positioning system to determine the position of calibration source.
 
 The ACU is developed to do calibration along the central axis of CD, which is very similar to the ACU used in Daya Bay experiment. There are 4 spools installed on the turntable. Three routine sources and one exchangeable source are installed on the ACU. The three routine sources include one gamma source (K40), one neutron source (Am-C) and one laser source. The calibration with ACU can coverage central axis of CD, with high precision of position control. The energy scale of CD can be used with neutron source deployed by ACU to the CD center.    
@@ -100,7 +101,7 @@ Two sets of CLS with different anchor positions are purposed to increase the sca
 \subsubsection{Guide Tube (GT)}
 Since the source cannot reach some boundary area of CD duo to mechanical limit, a Guide Tube calibration system was purposed. The guide tube will be out of CD. With the GT, we can position the calibration source along the surface of CD to obtain a better understand of boundary effect. 
 \subsubsection{Remotely Operated Under-liquid-scintillator Vehicles (ROV)}
-ROV is 3D scanning system, meaning that we can move the calibration to nearly everywhere in the CD. ROV is not a routine calibration system, but it still essential as a supplement of ACU, CLS, and GT.
+ROV is 3D scanning system, meaning that we can move the calibration source to nearly everywhere in the CD. ROV is not a routine calibration system, but it still essential as a supplement of ACU, CLS, and GT.
 \subsubsection{Positioning system}
 During the non-uniformity correction, we should precisely know the position of calibration points, so it's very important to get the position of calibration source.
 
@@ -108,24 +109,26 @@ However, it's difficult to determine position of source based on length of cable
 
 \section{Introduce of simulation}
 \subsection{Offline sniper}
+In this study, we mainly used JUNO official software SNIPER to do simulation. The SNIPER is developed based on Geant4. The framework includes particles generation, detector simulation, calibration and reconstruction, The version of SNIPER used in this study is J17-v1-r1-pre1 released by JUNO software group.
 
 \subsection{Introduction of source geometry}
-There are three parts for every radioactive source,including source enclosure, weight and quick connector, as shown in Fig.~\ref{source_weight_QC}. The total distance from top to bottom is 50 cm, and two cables are used to combine them together. The length of every cable is about 20 cm, which can make sure small shadowing effect from weight and quick connector. 
+The geometries of radioactive source have been written into SNIPER with gdml files. 
+There are three parts for every radioactive source,including source enclosure, weight and quick connector. The total distance from top to bottom is 50 cm, and two cables are used to combine them together. The length of every cable is about 20 cm, which can make sure small shadowing effect from weight and quick connector. 
 
 
-Fig.~\ref{gamma_source} is the geometry of gamma source. The internal part is stainless steel to seal the source. Both diameter and height of the SS are 6mm, which is very small to decrease the energy loss, with two loops at top and bottom to attach the cable. The outer is the PTFE shell to increase the reflectivity to minimize the photon loss. 
+The internal part is stainless steel to seal the source. Both diameter and height of the SS are 6mm, which is very small to decrease the energy loss, with two loops at top and bottom to attach the cable. The outer is the PTFE shell to increase the reflectivity to minimize the photon loss. 
 
-\begin{center}
-	\includegraphics[width=0.8in]{source_geometry1.png}
-	\figcaption{Overview of source, weight and quick connector}
-	\label{source_weight_QC}
-\end{center}
-
-\begin{center}
-	\includegraphics[width=1.5in]{source_geometry2.png}
-	\figcaption{Geometry of gamma source}
-	\label{gamma_source}
-\end{center}
+%\begin{center}
+%	\includegraphics[width=0.8in]{source_geometry1.png}
+%	\figcaption{Overview of source, weight and quick connector}
+%	\label{source_weight_QC}
+%\end{center}
+%
+%\begin{center}
+%	\includegraphics[width=1.5in]{source_geometry2.png}
+%	\figcaption{Geometry of gamma source}
+%	\label{gamma_source}
+%\end{center}
 
 
 The neutron enclosure is different from gamma since smaller neutron source is not safe and necessary, as shown in Fig.~\ref{neutron_source}. Both diameter and height of neutron source are 8 mm. The source is in a stainless steel (SS) tube. There are two SS pins respectively in top and bottom of the tube. The outer is the PTFE shell just same as gamma source. Fig.~\ref{neutron_prototype} shows the prototype of neutron source which has been tested in Daya Bay Detector. 
