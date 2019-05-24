@@ -246,7 +246,7 @@ For every source calibration, it will take ~5 minutes. So the rate of every sour
 \end{center}
 
 \section{Energy scale}
-One of main purpose of JUNO calibration is to make uncertainty of the scale less than 1\%. In order to reach this physics requirement, we should have a better understanding of the energy non-linearity of detector response. A series of radioactive sources will be used to do the calibration of energy non-linearity, including gamma sources, neutron source and beta source. 
+One of main purpose of JUNO calibration is to control uncertainty of the scale less than 1\%. In order to reach this physics requirement, we should have a better understanding of the energy non-linearity of detector response. A series of radioactive sources will be used to do the calibration of energy non-linearity, including gamma sources, neutron sources and beta source. 
 
 \subsection{Energy non-linearity of gamma}
 Here we will introduce the strategy of JUNO calibration based on MC simulation result. The full absorption peak of delay signal of neutron capture at Hydrogen (2.22 MeV) is determined as the energy scale. Then we can reconstruct energy of other calibration source with PE/scale. The reconstructed energy is different from true energy due to energy non-linearity. The ratio of reconstructed energy and true energy will be described as energy dependent of non-linearity.
@@ -277,10 +277,11 @@ However, IBD events is positron events. So we would like to know the response of
 The relation between gamma and electron can be established with Geant4. 
 And we assume that electron and positron have almost same action of energy non-linearity in addition to two gammas from positron annihilation.
 There are mainly three physics process for the conversion from gamma to electron, including pair production, Compton scattering, photoelectric effect. 
-Fig.~\ref{gamma_e_pdf} shows the probability density function (PDF) of energy of electron with initial energy of gamma 6.13 MeV.  
+Based on the MC simulation, we can obtain the probability density function (PDF) of electron energy with mono energy gamma.
+  
 
 \subsection{Model of energy non-linearity}
-Referring to Daya Bay's method, an empirical formula with 4 parameters was used to describe energy non-linearity of electron, 
+Referring to Daya Bay's method in Ref.~\cite{lab3}, an empirical formula with 4 parameters was used to describe energy non-linearity of electron, 
 \begin{eqnarray}
 \label{eq1}
 \frac{E_{vis}}{E_{true}} = \frac{P_{0}+P_{3}E_{true}}{1+P_{1}e^{-P_{2}E_{true}}}. 
@@ -291,7 +292,6 @@ The energy non-linearity of gamma can be deduced with both the empirical formula
 \begin{center}
 	\centering
 	\includegraphics[width=3in]{non_linearity_fit.pdf}
-	\includegraphics[width=2.7in]{B12.png}
 	\figcaption{Fit to data with Eq.~(\ref{eq1})}
 	\label{non_linearity_fit}
 \end{center}
@@ -370,30 +370,31 @@ Fig.~\ref{best_anchor} shows the energy resolution as function of anchor positio
 	\label{basic_coverage}
 \end{center}
 
-\begin{center}
-	\centering
-	%\includegraphics[width=3in]{statistical.jpg}
-	\includegraphics[width=2.5in]{non_uniform_correct_bias.pdf}
-	\includegraphics[width=2.5in]{non_uniform_correct_resolution.pdf}
-	\includegraphics[width=2.5in]{bias_vertex.pdf}
-	\includegraphics[width=2.5in]{resolution_vertex.pdf}
-	\figcaption{non uniformity correction}
-	\label{non_uniform_crrect_sum}
-\end{center}
+%\begin{center}
+%	\centering
+%	%\includegraphics[width=3in]{statistical.jpg}
+%	\includegraphics[width=2.5in]{non_uniform_correct_bias.pdf}
+%	\includegraphics[width=2.5in]{non_uniform_correct_resolution.pdf}
+%	\includegraphics[width=2.5in]{bias_vertex.pdf}
+%	\includegraphics[width=2.5in]{resolution_vertex.pdf}
+%	\figcaption{non uniformity correction}
+%	\label{non_uniform_crrect_sum}
+%\end{center}
 
-\begin{center}
-	\centering
-	\includegraphics[width=3in]{vertex_resolution.pdf}
-	\figcaption{vertex reconstruction resolution}
-	\label{vertex_resolution}
-\end{center}
+%\begin{center}
+%	\centering
+%	\includegraphics[width=3in]{vertex_resolution.pdf}
+%	\figcaption{vertex reconstruction resolution}
+%	\label{vertex_resolution}
+%\end{center}
 
 \subsection{Basic source coverage.}
 In the realistic experiments, it's impossible to use infinite points to do calibration. We purpose to do the CLS calibration monthly, and to avoid affect the normal physics data taking, the monthly calibration time should be limited to about 1 days. So the inner calibration points are 240, including 21 with ACU and 219 with CLS. We randomly select 219 points from a mount of points, and then calculate the corresponding energy resolution. Repeat the selection multiple times and then get the distribution of energy resolution. Choose the best selection with minimum energy resolution. Fig.~\ref{basic_coverage} shows relative best choice of calibration points. Fig.~\ref{non_uniform_crrect_sum} shows the result of non-uniformity correction with true vertex of IBD events and true position of calibration source. 
 
 \subsection{Systematic uncertainty analysis.}
-Vertex reconstruction. The non-uniformity correction is based on vertex of events, so vertex reconstruction significantly affects the quality of non-uniformity correction. 
-Here we use the assumption of vertex reconstruction in Yellow book as shown in Fig.~\ref{vertex_resolution}. As shown in table~\ref{summary_resolution}, with vertex smearing, the overall energy resolution is 0.02\% worse than before.
+Vertex reconstruction. The non-uniformity correction depends on vertex of events, so vertex reconstruction significantly affects the quality of non-uniformity correction. 
+Here we use the assumption of vertex reconstruction in Ref.~\cite{lab1}, 8 cm @ 1MeV. As shown in table~\ref{summary_resolution}, with vertex smearing, the overall energy resolution is 0.02\% worse than before.
+We also assume different vertex reconstruction 10 cm/$\sqrt{E(MeV)}$ and 15 cm/$\sqrt{E(MeV)}$, and get corresponding energy resolution 2.94\% and 2.96\%.
 
 
 \begin{center}
@@ -409,10 +410,11 @@ With position smearing for CLS calibration source, the overall energy resolution
 
 
 \section{Conceptual calibration strategy}
-The calibration schedule is based on above simulation result. There two types for the routine calibration, weekly calibration and monthly calibration. Also, a special calibration is necessary at the start of the experiment, which will take a relative long time.
+The conceptual calibration strategy is based on above simulation result. There two types for the routine calibration, weekly calibration and monthly calibration.
 
 \subsection{Weekly calibration}
 The weekly calibration will be operated every week with one radioactive source and one laser, as shown in table~\ref{weekly_time}.
+The weekly calibration can monitor the variation of energy scale.
 During the weekly calibration, only ACU will be executed.
 
 
@@ -478,12 +480,12 @@ The monthly calibration will be operated every month. During the monthly calibra
 
 \begin{multicols}{2}
 
-\subsection{Special calibration}
-	
-The special calibration can be conducted at the beginning of physics data taking.
-It will be relative much time to for the calibration to have a better understanding of CD including energy non-linearity and non-uniformity, as shown in table~\ref{special_time}.  
-	
-\section{Conclusion}
+%\subsection{Special calibration}
+%	
+%The special calibration can be conducted at the beginning of physics data taking.
+%It will be relative much time to for the calibration to have a better understanding of CD including energy non-linearity and non-uniformity, as shown in table~\ref{special_time}.  
+%	
+%\section{Conclusion}
 
 Based on the calibration system developed with ACU, CLS and GT, the simulation shows that the strategy can satisfy the physics requirement of neutrino MH determination.
 
@@ -520,7 +522,8 @@ Based on the calibration system developed with ACU, CLS and GT, the simulation s
 \vspace{3mm}
 
 \bibitem{lab1}Fengpeng An et al. 2016 . Phys. G: Nucl. Part. Phys. 43 030401
-\bibitem{lab2}Y. Zhang et al 2019 JINST 14 P01009
+\bibitem{lab2}Y. Zhang et al. 2019 JINST 14 P01009
+\bibitem{lab3}F. P. An et al. 2014 2014 Phys. Rev. Lett. 112, 061801
 
 %\bibitem{lab2} Tinkham M. Group Theory and Quantum Mechanics. New
 %York: McGraw-Hill, 1964. 10---50

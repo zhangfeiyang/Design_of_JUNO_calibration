@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.8.21)  23 MAY 2019 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.8.21)  24 MAY 2019 23:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,236 +461,125 @@ Package pdftex.def Info: calibration_system.png used on input line 88.
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 1 might be wrong on input line 95.
+(multicol)                Footnotes on page 1 might be wrong on input line 96.
 
 [1{c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
  <./calibration_system.png>]
-Underfull \hbox (badness 8113) in paragraph at lines 113--114
-[]\OT1/cmr/m/n/10 There are three parts for ev-ery ra-dioac-tive
- []
-
-<source_geometry1.png, id=16, 143.78719pt x 685.8122pt>
-File: source_geometry1.png Graphic file (type png)
-
-<use source_geometry1.png>
-Package pdftex.def Info: source_geometry1.png used on input line 119.
-(pdftex.def)             Requested size: 57.81621pt x 275.76414pt.
-
-<source_geometry2.png, id=17, 280.04625pt x 438.13687pt>
-File: source_geometry2.png Graphic file (type png)
-
-<use source_geometry2.png>
-Package pdftex.def Info: source_geometry2.png used on input line 125.
-(pdftex.def)             Requested size: 108.405pt x 169.60245pt.
-
-<source_geometry3.png, id=18, 602.25pt x 350.05782pt>
-File: source_geometry3.png Graphic file (type png)
-
-<use source_geometry3.png>
-Package pdftex.def Info: source_geometry3.png used on input line 135.
-(pdftex.def)             Requested size: 216.81pt x 126.0207pt.
- [2 <./source_geometry1.png> <./source_geometry2.png>] <neutron_source_prototyp
-e.jpg, id=22, 311.0895pt x 233.5635pt>
-File: neutron_source_prototype.jpg Graphic file (type jpg)
-
-<use neutron_source_prototype.jpg>
-Package pdftex.def Info: neutron_source_prototype.jpg used on input line 142.
-(pdftex.def)             Requested size: 216.81pt x 162.7841pt.
-
-Overfull \hbox (47.4634pt too wide) in paragraph at lines 153--172
- [] 
- []
-
-
 
 pdfTeX warning: pdflatex.exe (file ./Cs137.pdf): PDF inclusion: found PDF versi
 on <1.6>, but at most version <1.5> allowed
-<Cs137.pdf, id=23, 569.12625pt x 385.44pt>
+<Cs137.pdf, id=16, 569.12625pt x 385.44pt>
 File: Cs137.pdf Graphic file (type pdf)
  <use Cs137.pdf>
-Package pdftex.def Info: Cs137.pdf used on input line 183.
+Package pdftex.def Info: Cs137.pdf used on input line 192.
 (pdftex.def)             Requested size: 216.81pt x 146.83336pt.
-
-<neutron.pdf, id=24, 569.12625pt x 385.44pt>
-File: neutron.pdf Graphic file (type pdf)
- <use neutron.pdf>
-Package pdftex.def Info: neutron.pdf used on input line 190.
-(pdftex.def)             Requested size: 216.81pt x 146.83336pt.
-
+ [2]
 
 pdfTeX warning: pdflatex.exe (file ./shadowing_uncertainty.pdf): PDF inclusion:
  found PDF version <1.6>, but at most version <1.5> allowed
-<shadowing_uncertainty.pdf, id=25, 569.12625pt x 408.52625pt>
+<shadowing_uncertainty.pdf, id=23, 569.12625pt x 408.52625pt>
 File: shadowing_uncertainty.pdf Graphic file (type pdf)
 
 <use shadowing_uncertainty.pdf>
-Package pdftex.def Info: shadowing_uncertainty.pdf used on input line 197.
+Package pdftex.def Info: shadowing_uncertainty.pdf used on input line 206.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
 
-<compton_uncertainty.pdf, id=26, 569.12625pt x 408.52625pt>
+<compton_uncertainty.pdf, id=24, 569.12625pt x 408.52625pt>
 File: compton_uncertainty.pdf Graphic file (type pdf)
 
 <use compton_uncertainty.pdf>
-Package pdftex.def Info: compton_uncertainty.pdf used on input line 204.
+Package pdftex.def Info: compton_uncertainty.pdf used on input line 213.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
- [3 <./source_geometry3.png> <./neutron_source_prototype.jpg> <./Cs137.pdf, pag
-e is rotated 90 degrees> <./neutron.pdf, page is rotated 90 degrees> <./shadowi
-ng_uncertainty.pdf, page is rotated 90 degrees>]
+
 
 pdfTeX warning: pdflatex.exe (file ./stat_uncertainty.pdf): PDF inclusion: foun
 d PDF version <1.6>, but at most version <1.5> allowed
-<stat_uncertainty.pdf, id=91, 569.12625pt x 408.52625pt>
+<stat_uncertainty.pdf, id=25, 569.12625pt x 408.52625pt>
 File: stat_uncertainty.pdf Graphic file (type pdf)
 
 <use stat_uncertainty.pdf>
-Package pdftex.def Info: stat_uncertainty.pdf used on input line 228.
+Package pdftex.def Info: stat_uncertainty.pdf used on input line 243.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
- <gamma2e_1.png, id=92, 577.1964pt x 107.9232pt>
-File: gamma2e_1.png Graphic file (type png)
-
-<use gamma2e_1.png>
-Package pdftex.def Info: gamma2e_1.png used on input line 243.
-(pdftex.def)             Requested size: 216.81pt x 40.5386pt.
- <gamma2e_2.png, id=93, 577.1964pt x 135.8676pt>
-File: gamma2e_2.png Graphic file (type png)
-
-<use gamma2e_2.png>
-Package pdftex.def Info: gamma2e_2.png used on input line 244.
-(pdftex.def)             Requested size: 216.81pt x 51.03522pt.
- <gamma_e_pdf1.png, id=94, 220.1826pt x 154.176pt>
-File: gamma_e_pdf1.png Graphic file (type png)
-
-<use gamma_e_pdf1.png>
-Package pdftex.def Info: gamma_e_pdf1.png used on input line 253.
-(pdftex.def)             Requested size: 144.54pt x 101.21301pt.
- <gamma_e_pdf2.png, id=95, 221.1462pt x 157.5486pt>
-File: gamma_e_pdf2.png Graphic file (type png)
-
-<use gamma_e_pdf2.png>
-Package pdftex.def Info: gamma_e_pdf2.png used on input line 254.
-(pdftex.def)             Requested size: 144.54pt x 102.97511pt.
- [4 <./compton_uncertainty.pdf, page is rotated 90 degrees> <./stat_uncertainty
-.pdf, page is rotated 90 degrees> <./gamma2e_1.png> <./gamma2e_2.png>] <non_lin
-earity_fit.pdf, id=150, 569.12625pt x 385.44pt>
+ [3 <./Cs137.pdf, page is rotated 90 degrees> <./shadowing_uncertainty.pdf, pag
+e is rotated 90 degrees> <./compton_uncertainty.pdf, page is rotated 90 degrees
+> <./stat_uncertainty.pdf, page is rotated 90 degrees>] <non_linearity_fit.pdf,
+ id=90, 569.12625pt x 552.0625pt>
 File: non_linearity_fit.pdf Graphic file (type pdf)
 
 <use non_linearity_fit.pdf>
-Package pdftex.def Info: non_linearity_fit.pdf used on input line 274.
-(pdftex.def)             Requested size: 216.81pt x 146.83336pt.
- <B12.png, id=151, 478.03593pt x 309.40594pt>
-File: B12.png Graphic file (type png)
+Package pdftex.def Info: non_linearity_fit.pdf used on input line 294.
+(pdftex.def)             Requested size: 216.81pt x 210.3082pt.
 
-<use B12.png>
-Package pdftex.def Info: B12.png used on input line 275.
-(pdftex.def)             Requested size: 195.12877pt x 126.29544pt.
- <bias_positron.png, id=152, 708.6475pt x 531.9875pt>
+<bias_positron.png, id=91, 708.6475pt x 531.9875pt>
 File: bias_positron.png Graphic file (type png)
-
-<use bias_positron.png>
-Package pdftex.def Info: bias_positron.png used on input line 284.
+ <use bias_positron.png>
+Package pdftex.def Info: bias_positron.png used on input line 303.
 (pdftex.def)             Requested size: 180.67499pt x 135.63472pt.
 
-<sys_uncertainty_non-linearity.pdf, id=153, 569.12625pt x 408.52625pt>
+<sys_uncertainty_non-linearity.pdf, id=92, 569.12625pt x 386.44376pt>
 File: sys_uncertainty_non-linearity.pdf Graphic file (type pdf)
 
 <use sys_uncertainty_non-linearity.pdf>
-Package pdftex.def Info: sys_uncertainty_non-linearity.pdf used on input line 2
-94.
-(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
- [5 <./gamma_e_pdf1.png> <./gamma_e_pdf2.png> <./non_linearity_fit.pdf, page is
- rotated 90 degrees> <./B12.png> <./bias_positron.png>] <calibration_mapping.pd
-f, id=204, 453.695pt x 739.76375pt>
+Package pdftex.def Info: sys_uncertainty_non-linearity.pdf used on input line 3
+13.
+(pdftex.def)             Requested size: 216.81pt x 147.21574pt.
+
+<calibration_mapping.pdf, id=93, 453.695pt x 739.76375pt>
 File: calibration_mapping.pdf Graphic file (type pdf)
 
 <use calibration_mapping.pdf>
-Package pdftex.def Info: calibration_mapping.pdf used on input line 307.
+Package pdftex.def Info: calibration_mapping.pdf used on input line 326.
 (pdftex.def)             Requested size: 216.81pt x 353.51355pt.
-
-<spline_function.pdf, id=205, 597.23125pt x 845.1575pt>
+ [4 <./non_linearity_fit.pdf, page is rotated 90 degrees> <./bias_positron.png>
+]
+<spline_function.pdf, id=144, 597.23125pt x 845.1575pt>
 File: spline_function.pdf Graphic file (type pdf)
 
 <use spline_function.pdf>
-Package pdftex.def Info: spline_function.pdf used on input line 314.
+Package pdftex.def Info: spline_function.pdf used on input line 333.
 (pdftex.def)             Requested size: 216.81pt x 306.80989pt.
 
-<non_uniform_correction.pdf, id=206, 502.87875pt x 739.76375pt>
+<non_uniform_correction.pdf, id=145, 502.87875pt x 739.76375pt>
 File: non_uniform_correction.pdf Graphic file (type pdf)
 
 <use non_uniform_correction.pdf>
-Package pdftex.def Info: non_uniform_correction.pdf used on input line 322.
+Package pdftex.def Info: non_uniform_correction.pdf used on input line 341.
 (pdftex.def)             Requested size: 180.67499pt x 265.78421pt.
- [6 <./sys_uncertainty_non-linearity.pdf, page is rotated 90 degrees> <./calibr
+ [5 <./sys_uncertainty_non-linearity.pdf, page is rotated 90 degrees> <./calibr
 ation_mapping.pdf>]
-<best_anchor.pdf, id=257, 569.12625pt x 363.3575pt>
+<best_anchor.pdf, id=235, 569.12625pt x 363.3575pt>
 File: best_anchor.pdf Graphic file (type pdf)
  <use best_anchor.pdf>
-Package pdftex.def Info: best_anchor.pdf used on input line 332.
+Package pdftex.def Info: best_anchor.pdf used on input line 351.
 (pdftex.def)             Requested size: 289.07999pt x 184.57246pt.
 
-Overfull \hbox (44.38629pt too wide) in paragraph at lines 332--333
+Overfull \hbox (44.38629pt too wide) in paragraph at lines 351--352
  [] 
  []
 
-<basic_coverage.pdf, id=258, 453.695pt x 739.76375pt>
+<basic_coverage.pdf, id=236, 453.695pt x 739.76375pt>
 File: basic_coverage.pdf Graphic file (type pdf)
  <use basic_coverage.pdf>
-Package pdftex.def Info: basic_coverage.pdf used on input line 349.
+Package pdftex.def Info: basic_coverage.pdf used on input line 368.
 (pdftex.def)             Requested size: 216.81pt x 353.51355pt.
 
-[7 <./spline_function.pdf> <./non_uniform_correction.pdf> <./best_anchor.pdf, p
+[6 <./spline_function.pdf> <./non_uniform_correction.pdf> <./best_anchor.pdf, p
 age is rotated 90 degrees>]
-<non_uniform_correct_bias.pdf, id=5332, 569.12625pt x 408.52625pt>
-File: non_uniform_correct_bias.pdf Graphic file (type pdf)
 
-<use non_uniform_correct_bias.pdf>
-Package pdftex.def Info: non_uniform_correct_bias.pdf used on input line 357.
-(pdftex.def)             Requested size: 180.67499pt x 129.69005pt.
+LaTeX Warning: Reference `non_uniform_crrect_sum' on page 7 undefined on input 
+line 392.
 
-<non_uniform_correct_resolution.pdf, id=5333, 569.12625pt x 408.52625pt>
-File: non_uniform_correct_resolution.pdf Graphic file (type pdf)
-
-<use non_uniform_correct_resolution.pdf>
-Package pdftex.def Info: non_uniform_correct_resolution.pdf used on input line 
-358.
-(pdftex.def)             Requested size: 180.67499pt x 129.69005pt.
-
-<bias_vertex.pdf, id=5334, 569.12625pt x 408.52625pt>
-File: bias_vertex.pdf Graphic file (type pdf)
- <use bias_vertex.pdf>
-Package pdftex.def Info: bias_vertex.pdf used on input line 359.
-(pdftex.def)             Requested size: 180.67499pt x 129.69005pt.
-
-<resolution_vertex.pdf, id=5335, 569.12625pt x 408.52625pt>
-File: resolution_vertex.pdf Graphic file (type pdf)
-
-<use resolution_vertex.pdf>
-Package pdftex.def Info: resolution_vertex.pdf used on input line 360.
-(pdftex.def)             Requested size: 180.67499pt x 129.69005pt.
-
-<vertex_resolution.pdf, id=5336, 569.12625pt x 408.52625pt>
-File: vertex_resolution.pdf Graphic file (type pdf)
-
-<use vertex_resolution.pdf>
-Package pdftex.def Info: vertex_resolution.pdf used on input line 367.
-(pdftex.def)             Requested size: 216.81pt x 155.62807pt.
- [8 <./basic_coverage.pdf> <./non_uniform_correct_bias.pdf, page is rotated 90 
-degrees> <./non_uniform_correct_resolution.pdf, page is rotated 90 degrees> <./
-bias_vertex.pdf, page is rotated 90 degrees> <./resolution_vertex.pdf, page is 
-rotated 90 degrees> <./vertex_resolution.pdf, page is rotated 90 degrees>]
-<resolution_position_smearing.pdf, id=5599, 569.12625pt x 408.52625pt>
+<resolution_position_smearing.pdf, id=5310, 569.12625pt x 408.52625pt>
 File: resolution_position_smearing.pdf Graphic file (type pdf)
 
 <use resolution_position_smearing.pdf>
-Package pdftex.def Info: resolution_position_smearing.pdf used on input line 38
+Package pdftex.def Info: resolution_position_smearing.pdf used on input line 40
 3.
 (pdftex.def)             Requested size: 216.81pt x 155.62807pt.
- [9 <./resolution_position_smearing.pdf, page is rotated 90 degrees>]
+ [7 <./basic_coverage.pdf> <./resolution_position_smearing.pdf, page is rotated
+ 90 degrees>] [8]
 
-LaTeX Warning: Reference `special_time' on page 10 undefined on input line 465.
-
-
-[10] 
 AED: lastpage setting LastPage
 (./Design_of_JUNO_Calibration.aux)
 
@@ -698,31 +587,32 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4612 strings out of 492995
- 58760 string characters out of 6136402
- 135639 words of memory out of 5000000
- 8025 multiletter control sequences out of 15000+600000
+ 4532 strings out of 492995
+ 56992 string characters out of 6136402
+ 142633 words of memory out of 5000000
+ 7961 multiletter control sequences out of 15000+600000
  14640 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,10n,45p,874b,639s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,10n,45p,874b,753s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2017
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2017/texmf-dis
-t/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2017/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi5.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi6.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/
-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2017/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2017/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2017/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy6.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb>
-Output written on Design_of_JUNO_Calibration.pdf (10 pages, 1410692 bytes).
+t/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dist/fonts/t
+ype1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi5.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi6.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2017/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr9.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy6.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
+.pfb>
+Output written on Design_of_JUNO_Calibration.pdf (8 pages, 819364 bytes).
 PDF statistics:
- 5699 PDF objects out of 6186 (max. 8388607)
- 5256 compressed objects within 53 object streams
+ 5458 PDF objects out of 6186 (max. 8388607)
+ 5162 compressed objects within 52 object streams
  0 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
