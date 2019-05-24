@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.8.21)  24 MAY 2019 23:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.8.21)  24 MAY 2019 23:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -589,7 +589,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  4532 strings out of 492995
  56992 string characters out of 6136402
- 142633 words of memory out of 5000000
+ 142852 words of memory out of 5000000
  7961 multiletter control sequences out of 15000+600000
  14640 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -609,7 +609,7 @@ s/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmr9.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy6.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
 .pfb>
-Output written on Design_of_JUNO_Calibration.pdf (8 pages, 819364 bytes).
+Output written on Design_of_JUNO_Calibration.pdf (8 pages, 819390 bytes).
 PDF statistics:
  5458 PDF objects out of 6186 (max. 8388607)
  5162 compressed objects within 52 object streams
