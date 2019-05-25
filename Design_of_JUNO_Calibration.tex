@@ -26,7 +26,7 @@
 
 
 %\title{JUNO Calibration Strategy }
-\title{Design of JUNO Calibration system}
+\title{Design of JUNO Calibration System}
 
 \author{%
       %Author1$^{1,2;1)}$\email{someone@sjtu.edu.cn}%
@@ -86,12 +86,13 @@ The other effect is about energy non-linearity of detector response. The quenchi
 
 \begin{center}
 	\includegraphics[width=3.0in]{calibration_system.png}
-	\figcaption{The overview of calibration system}
+	\figcaption{The overview of calibration system, including automatic calibration Unit (ACU), cable loop system (CLS), Guide Tube (GT) and Remotely Operated Under-liquid-scintillator Vehicles (ROV)}
 	\label{overview_calibration_system}
 \end{center}
 During the calibration, we need deployment system to move the source to various position. 
 The deployments systems of calibration sources include ACU, CLS, GT, ROV as shown in Fig~\ref{overview_calibration_system}. For ROV and CLS, we will use independent positioning system to determine the position of calibration source.
 
+\subsubsection{Automatic Calibration Unit (ACU)}
 The ACU is developed to do calibration along the central axis of CD, which is very similar to the ACU used in Daya Bay experiment. There are 4 spools installed on the turntable. Three routine sources and one exchangeable source are installed on the ACU. The three routine sources include one gamma source (K40), one neutron source (Am-C) and one laser source. The calibration with ACU can coverage central axis of CD, with high precision of position control. The energy scale of CD can be used with neutron source deployed by ACU to the CD center.    
 \subsubsection{Cable loop system (CLS)}
 The CLS is necessary since we need to have a better understand of detector non-uniformity.
@@ -190,7 +191,7 @@ The Fig.~\ref{Cs137} shows the simulation of gamma source Cs-137 with source enc
 
 \begin{center}
 	\includegraphics[width=3in]{Cs137.pdf}
-	\figcaption{PE spectrum of Cs137 with source enclosure at CD center}
+	\figcaption{PE spectrum of Cs137 with source enclosure at CD center.Fit the spectrum with physically-motivated EM calorimeter function in Ref.~\cite{lab4} to obtain full absorption peak. The function can correct the shift of peak by Compton tail.}
 	\label{Cs137}
 \end{center}
 
@@ -204,23 +205,23 @@ The Fig.~\ref{Cs137} shows the simulation of gamma source Cs-137 with source enc
 \begin{center}
 	\centering
 	\includegraphics[width=3in]{shadowing_uncertainty.pdf}
-	\figcaption{optical shadowing effect}
+	\figcaption{Optical shadowing effect. The shadowing effect is mainly due to source enclosure and weights. The bias due to shadowing is less than 0.15\% for every source. And the shadowing is obvious energy dependent, which makes sense.}
 	\label{shadowing}
 \end{center}
 
 \begin{center}
 	\centering
 	\includegraphics[width=3in]{compton_uncertainty.pdf}
-	\figcaption{Compton effect}
+	\figcaption{Compton effect. The Compton effect is also energy dependent even it's not very obvious. Since Co60 has two gammas with average 1.25 MeV energy, it have higher probability of Compton scattring in non-LS compared with single 1.25 MeV gamma. }
 	\label{compton}
 \end{center}
 
 \section{Control energy uncertainty}
 \subsection{Shadowing effect}
-The material of source container shell is Teflon. Even the reflectivity is very high (assume 90\% reflectivity in the simulation), there still must be some optical photon loss. So we need to study the shadowing effect. To decouple the shadowing effect and Compton effect, we can select the events without energy loss during the simulation. With the cut, the PE spectrum follows the Gaussian distribution, so we fit it with Gaussian function to obtain mean value as shown in Fig.~\ref{Cs137}. And then compare it with the ideal case, bare source without enclosure. Fig.~\ref{shadowing} shows the uncertainty due to the shadowing effect.
+The material of source container shell is Teflon. Even the reflectivity is very high (assume 90\% reflectivity in the simulation), there still must be some optical photon loss. So we need to study the shadowing effect. To decouple the shadowing effect and Compton effect, we can select the events without energy loss during the simulation. With the cut, the PE spectrum follows the Gaussian distribution, so we fit it with Gaussian function to obtain mean value. And then compare it with the ideal case, bare source without enclosure. Fig.~\ref{shadowing} shows the uncertainty due to the shadowing effect.
 
 \subsection{Compton effect}
-The Compton effect is due to energy loss in non-LS material, and this will introduce Compton shoulder in PE spectrum. And the Compton shoulder will shift the mean value. Even we use the special function to correct this effect, there is still some uncertainty we should consider. Fig.~\ref{compton} the uncertain due to the Compton effect.
+The Compton effect is due to energy loss in non-LS material, and this will introduce Compton shoulder in PE spectrum. And the Compton shoulder will shift the mean value. Even we use physically-motivated EM calorimeter function in Ref.~\cite{lab4} to correct this effect, there is still some uncertainty we should consider. Fig.~\ref{compton} the uncertain due to the Compton effect.
 
 \subsection{Electronic effect}
 The non-linearity of electronic can be calibrated with our lased calibration system. The intensity of laser calibration system can be controled to 0.3\% uncertainty in Ref.~\cite{lab2}, which can give a good calibration for electronic electronic. So in this paper, we roughly assume the uncertainty from electronic non-linearity is 0.3\%. 
@@ -241,12 +242,12 @@ For every source calibration, it will take ~5 minutes. So the rate of every sour
 \begin{center}
 	\centering
 	\includegraphics[width=3in]{stat_uncertainty.pdf}
-	\figcaption{uncertainty due to the statistic}
+	\figcaption{Statistic uncertainty. The uncertainty is significantly energy dependent, which make sennse.}
 	\label{statistical}
 \end{center}
 
 \section{Energy scale}
-One of main purpose of JUNO calibration is to control uncertainty of the scale less than 1\%. In order to reach this physics requirement, we should have a better understanding of the energy non-linearity of detector response. A series of radioactive sources will be used to do the calibration of energy non-linearity, including gamma sources, neutron sources and beta source. 
+One of main purposes of JUNO calibration is to control uncertainty of the scale less than 1\%. In order to reach this physics requirement, we should have a better understanding of the energy non-linearity of detector response. A series of radioactive sources will be used to do the calibration of energy non-linearity, including gamma sources, neutron sources and beta source. 
 
 \subsection{Energy non-linearity of gamma}
 Here we will introduce the strategy of JUNO calibration based on MC simulation result. The full absorption peak of delay signal of neutron capture at Hydrogen (2.22 MeV) is determined as the energy scale. Then we can reconstruct energy of other calibration source with PE/scale. The reconstructed energy is different from true energy due to energy non-linearity. The ratio of reconstructed energy and true energy will be described as energy dependent of non-linearity.
@@ -292,7 +293,11 @@ The energy non-linearity of gamma can be deduced with both the empirical formula
 \begin{center}
 	\centering
 	\includegraphics[width=3in]{non_linearity_fit.pdf}
-	\figcaption{Fit to data with Eq.~(\ref{eq1})}
+	\figcaption{Fit to data with Eq.~(\ref{eq1}).
+The top figure show the non-linearity of gamma with ratio of True energy and reconstruted one.
+The black point is data from calibration of gamma, while the red line shows the best fit with Eq.~(\ref{eq1}).
+The bottom is the ratio of Data and best fit.
+The error bar is the combination of uncertainties including optical shadowing, Compton effect, electronic non-linearity and statistic.}
 	\label{non_linearity_fit}
 \end{center}
 
@@ -301,7 +306,7 @@ The energy non-linearity of gamma can be deduced with both the empirical formula
 \begin{center}
 	\centering
 	\includegraphics[width=2.5in]{bias_positron.png}
-	\figcaption{bias of positron non-linearity after correction}
+	\figcaption{Bias of positron non-linearity. The non-linearity of positron is obtained by fitting data of gamma non-linearity. And then comparing the reconstruted non-linearity and true non-linearity in MC simulation, we get the bias of two.}
 	\label{bias_positron}
 \end{center}
 
@@ -311,27 +316,29 @@ The data of gamma energy non-linearity can be obtained from calibration. With th
 \begin{center}
 	\centering
 	\includegraphics[width=3in]{sys_uncertainty_non-linearity.pdf}
-	\figcaption{Systematic uncertainty analysis}
+	\figcaption{Systematic uncertainty analysis. The ratio of reconstructed energy and true one shows the bias of non-linearity after calibration for positron. The error bar show the uncertainty. The overall uncertainty of non-linearity is less than 1\% from 1 to 8 MeV, which meets the physics requirement of MH determination. }
 	\label{sys_uncertainty_non-linearity}
 \end{center}
 
 \subsection{Systematic uncertainty analysis}
 Then we consider the uncertainty from optical shadowing effect, Compton tail, statistic effect and electronic non-linearity effect.
-Assuming we cannot get exact mean for every calibration source, every source will be randomly added bias based on the uncertainty. Then we can get the corresponding bias of positron non-linearity. And repeat this procedure multiple times. For every time, we get one curve for the bias. 
-The overall bias is shown in Fig.~\ref{sys_uncertainty_non-linearity}
+The true energy scale could be obtained with ideal source in the MC simulation.
+Then the uncertinty can be randomly added for every source based on the study for every type of effect.
+Based on the biased energy scale, the non-linearity of positron will be reconstructed. And repeat this procedure multiple times, then we can get the uncertainty of non-linearity compared with the true one as shown in Fig.~\ref{sys_uncertainty_non-linearity}. 
 \section{Energy resolution}
+The task of calibation is not only for non-linearity but also non-uniformity. The non-uniformity of detector should be corrected with calibration system to contol the energy resolution better than 3\%. 
 
 \begin{center}
 	\centering
 	\includegraphics[width=3in]{calibration_mapping.pdf}
-	\figcaption{calibration mapping}
+	\figcaption{Calibration mapping. In order to construct to a better strategy of calibration, first we simuate enough calibration points in the half vertical plane. The points is randomly distribute in the plane. Then we will do optimization based on this mapping.}
 	\label{calibration_mapping}
 \end{center}
 
 \begin{center}
 	\centering
 	\includegraphics[width=3in]{spline_function.pdf}
-	\figcaption{spline function}
+	\figcaption{Spline function to describe the non-uniformity.}
 	\label{spline_function}
 \end{center}
 
@@ -339,7 +346,7 @@ The overall bias is shown in Fig.~\ref{sys_uncertainty_non-linearity}
 	\centering
 	%\includegraphics[width=3in]{statistical.jpg}
 	\includegraphics[width=2.5in]{non_uniform_correction.pdf}
-	\figcaption{non uniformity correction}
+	\figcaption{Non uniformity correction. 0 MeV e+ uniformly distribute in CD. The spline function is used to correction the non-uniformity based on the true vertex for every event.}
 	\label{mono_energy}
 \end{center}
 
@@ -349,7 +356,7 @@ Then we do simulation to qualify the non-uniformity. The mono energy positron un
 \begin{center}
 	\centering
 	\includegraphics[width=4in]{best_anchor.pdf}
-	\figcaption{best anchor position}
+	\figcaption{Energy resolution as function of two anchors positions. The best choices are respectively 48 degree and 78 degree based on energy resolution.}
 	\label{best_anchor}
 \end{center}
 
@@ -389,7 +396,7 @@ Fig.~\ref{best_anchor} shows the energy resolution as function of anchor positio
 %\end{center}
 
 \subsection{Basic source coverage.}
-In the realistic experiments, it's impossible to use infinite points to do calibration. We purpose to do the CLS calibration monthly, and to avoid affect the normal physics data taking, the monthly calibration time should be limited to about 1 days. So the inner calibration points are 240, including 21 with ACU and 219 with CLS. We randomly select 219 points from a mount of points, and then calculate the corresponding energy resolution. Repeat the selection multiple times and then get the distribution of energy resolution. Choose the best selection with minimum energy resolution. Fig.~\ref{basic_coverage} shows relative best choice of calibration points. Fig.~\ref{non_uniform_crrect_sum} shows the result of non-uniformity correction with true vertex of IBD events and true position of calibration source. 
+In the realistic experiments, it's impossible to use infinite points to do calibration. We purpose to do the CLS calibration monthly, and to avoid affect the normal physics data taking, the monthly calibration time should be limited to about 1 days. So the inner calibration points are 240, including 21 with ACU and 219 with CLS. We randomly select 219 points from a mount of points, and then calculate the corresponding energy resolution. Repeat the selection multiple times and then get the distribution of energy resolution. Choose the best selection with minimum energy resolution. Fig.~\ref{basic_coverage} shows relative best choice of calibration points. 
 
 \subsection{Systematic uncertainty analysis.}
 Vertex reconstruction. The non-uniformity correction depends on vertex of events, so vertex reconstruction significantly affects the quality of non-uniformity correction. 
@@ -407,6 +414,9 @@ We also assume different vertex reconstruction 10 cm/$\sqrt{E(MeV)}$ and 15 cm/$
 
 Positioning smearing. Due to self-weight of cable and friction, it's difficult to determine position of source only based on length of cable. So an independent positioning system was purposed. In this simulation, we assume the accuracy 3 cm, which is the requirement for positioning system. To simulate this effect, we randomly smear the calibration source with 3 cm position resolution.
 With position smearing for CLS calibration source, the overall energy resolution is 2.94\%, 0.01\% worse than before as shown in Fig~\ref{cls_position_smearing}.
+
+
+Table~\ref{summary_resolution} is a summary of energy resolution with different facts. The PMT dark noise is not inclued in this simuation, but we can roughly estimate the value in Ref~\cite{lab1}.
 
 
 \section{Conceptual calibration strategy}
@@ -436,8 +446,8 @@ The monthly calibration can correct the detector non-uniformity.
 		%\midrule  % ???
 		ideal & 2.693(5) & 0.699(5)& 0 & 2.92(1)\\
 		vertex smearing &2.707(6) & 0.707(5) & 0 & 2.93(1) \\
-		positioning precision & 2.716(6) & 0.711(6) & 0 & 2.94(1)\\
-		dark noise & 2.716(6) & 0.711(6) & 0.9& 3.00(1)\\
+		positioning precision & 2.75(1) & 0.70(1) & 0 & 2.97(1)\\
+		dark noise & 2.75(1) & 0.70(1) & 0.9& 3.02(1)\\
 		\bottomrule  % ???
 		\label{summary_resolution}
 	\end{tabular*}
@@ -485,11 +495,9 @@ The monthly calibration can correct the detector non-uniformity.
 %The special calibration can be conducted at the beginning of physics data taking.
 %It will be relative much time to for the calibration to have a better understanding of CD including energy non-linearity and non-uniformity, as shown in table~\ref{special_time}.  
 %	
-%\section{Conclusion}
+\section{Conclusion}
 
 Based on the calibration system developed with ACU, CLS and GT, the simulation shows that the strategy can satisfy the physics requirement of neutrino MH determination.
-
-
 
 
 \end{multicols}
@@ -523,7 +531,8 @@ Based on the calibration system developed with ACU, CLS and GT, the simulation s
 
 \bibitem{lab1}Fengpeng An et al. 2016 . Phys. G: Nucl. Part. Phys. 43 030401
 \bibitem{lab2}Y. Zhang et al. 2019 JINST 14 P01009
-\bibitem{lab3}F. P. An et al. 2014 2014 Phys. Rev. Lett. 112, 061801
+\bibitem{lab3}F. P. An et al. 2014 Phys. Rev. Lett. 112, 061801
+\bibitem{lab4}Jia-Hua Cheng et al. arXiv 1603.04433
 
 %\bibitem{lab2} Tinkham M. Group Theory and Quantum Mechanics. New
 %York: McGraw-Hill, 1964. 10---50
